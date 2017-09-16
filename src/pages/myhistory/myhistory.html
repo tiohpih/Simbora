@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My History</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="schedule-content">
+  <ion-content class="schedule-content">
+<ion-list>
+    <ion-item>
+      <ion-label fixed>Place:</ion-label>
+      <ion-input type="text" [(ngModel)]="checkin.placeName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Address:</ion-label>
+      <ion-input type="text" [(ngModel)]="checkin.placeAddress"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date:</ion-label>
+      <ion-datetime displayFormat="DD/MM/YY" pickerFormat="DD-MM-YYYY" [(ngModel)]="checkin.date.full"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="add()">Add</button>
+    </ion-item>    
+ </ion-list>
+
+
+
+
+ <div [ngSwitch]="segment">
+      <ion-list class="schedule-list">
+        <ion-item class="schedule-item" *ngFor="let checkin of list | async">
+          <ion-row>
+            <ion-col width-20 class="schedule-date">
+              <h2 class="schedule-day">{{checkin.date.day}}</h2>
+              <h3 class="schedule-month">{{checkin.date.month_name}}</h3>
+            </ion-col>
+            <ion-col width-80 class="schedule-data">
+              <div class="data-item">
+                <div class="item-content">
+                  <h2 class="item-title one-line">{{checkin.placeName}}</h2>
+                  <div class="item-description">
+                    <ion-icon class="description-icon" name="clock"></ion-icon>
+                    <p class="description-text">{{checkin.date.full}}</p>
+                  </div>
+                  <div class="item-description">
+                    <ion-icon class="description-icon" name="navigate"></ion-icon>
+                    <p class="description-text one-line">{{checkin.placeAddress}}</p>
+                  </div>
+                </div>
+                <ion-icon class="item-icon" name="arrow-forward"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-list>
+ </div>
+</ion-content>

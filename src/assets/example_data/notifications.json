@@ -1,0 +1,36 @@
+{
+    "today":[
+      {
+        "name": "Marcio",
+        "image": "./assets/images/notifications/100x100Notification1.jpeg",
+        "message": "Márcio está no Habbibs",
+        "date": "5:03 pm"
+      },
+      {
+        "name": "Jessica",
+        "image": "./assets/images/notifications/100x100Notification2.png",
+        "message": "Jessica gostou da Churrascaria Kieza",
+        "date": "2:54 pm"
+      },
+      {
+        "name": "Ana",
+        "image": "./assets/images/notifications/100x100Notification3.jpg",
+        "message": "Ana está no Bosque",
+        "date": "1:54 pm"
+      }
+    ],
+    "yesterday":[
+      {
+        "name": "Allan",
+        "image": "./assets/images/notifications/100x100Notification4.jpeg",
+        "message": "Allan não gostou do Trailler do Zeca",
+        "date": "9:11 pm"
+      },
+      {
+        "name": "Karen",
+        "image": "./assets/images/notifications/100x100Notification5.jpg",
+        "message": "Karen está no Bar do Martins",
+        "date": "3:09 pm"
+      }
+  ]
+}

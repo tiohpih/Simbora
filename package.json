@@ -1,0 +1,83 @@
+{
+  "name": "simBora",
+  "author": "Sim!Bora",
+  "homepage": "https://simbora.net",
+  "private": true,
+  "scripts": {
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
+  },
+  "dependencies": {
+    "@angular/common": "2.4.8",
+    "@angular/compiler": "2.4.8",
+    "@angular/compiler-cli": "2.4.8",
+    "@angular/core": "2.4.8",
+    "@angular/forms": "2.4.8",
+    "@angular/http": "2.4.8",
+    "@angular/platform-browser": "2.4.8",
+    "@angular/platform-browser-dynamic": "2.4.8",
+    "@angular/platform-server": "2.4.8",
+    "@ionic/storage": "2.0.0",
+    "@types/googlemaps": "^3.25.38",
+    "angularfire2": "^2.0.0-beta.8",
+    "bourbon": "^4.2.7",
+    "firebase": "^3.7.5",
+    "ionic-angular": "2.2.0",
+    "ionic-native": "2.4.1",
+    "ionicons": "3.0.0",
+    "rxjs": "5.0.1",
+    "sw-toolbox": "3.4.0",
+    "zone.js": "0.7.2"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "1.1.4",
+    "typescript": "2.0.9"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-nativestorage",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-x-socialsharing",
+    {
+      "locator": "https://github.com/Rohfosho/CordovaCallNumberPlugin.git",
+      "id": "call-number"
+    },
+    "cordova-plugin-geolocation",
+    {
+      "id": "cordova-plugin-facebook4",
+      "locator": "cordova-plugin-facebook4",
+      "variables": {
+        "APP_ID": "700980600074099",
+        "APP_NAME": "Sim!Bora"
+      }
+    },
+    {
+      "id": "cordova-plugin-googleplus",
+      "locator": "cordova-plugin-googleplus",
+      "variables": {
+        "REVERSED_CLIENT_ID": "com.googleusercontent.apps.1001905109734-c6ime9d783l15kjmi2pqsplku4vua2e5"
+      }
+    }
+  ],
+  "cordovaPlatforms": [
+    {
+      "platform": "ios",
+      "version": "~4.1.1",
+      "locator": "ios"
+    },
+    {
+      "platform": "android",
+      "version": "~5.1.1",
+      "locator": "android"
+    }
+  ],
+  "description": "Qual a boa de hoje?",
+  "config": {
+    "ionic_sass": "./config/sass.config.js"
+  }
+}

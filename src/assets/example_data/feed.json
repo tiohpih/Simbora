@@ -1,0 +1,44 @@
+{
+    "feed": [
+        {
+            "title": "Churrascaria Kieza",
+            "image": "./assets/images/maps/place-1.jpg",
+            "description": "A churrascaria oferece sistema de rodízio, com buffet completo de saladas e guarnições, em ambiente informal.",
+            "likes": 52,
+            "comments": 3,
+            "liked": true
+        },
+        {
+            "title": "Cantina Mamma Mia",
+            "image": "./assets/images/maps/place-2.jpg",
+            "description": "Massas e molhos artesanais, além de filés italianos e vinhos, em casinha aconchegante construída em 1926.",
+            "likes": 11,
+            "comments": 7,
+            "liked": false
+        },
+        {
+            "title": "Cupim Restaurante",
+            "image": "./assets/images/maps/place-3.jpg",
+            "description": "Culinária do Brasil em versões encorpadas de grelhados e acompanhamentos, em ambiente movimentado e familiar.",
+            "likes": 36,
+            "comments": 1,
+            "liked": true
+        },
+        {
+            "title": "China in Box",
+            "image": "./assets/images/maps/place-4.jpg",
+            "description": "Rede de fast-food de comida chinesa para delivery em caixas personalizadas ou consumo em ambiente informal.",
+            "likes": 27,
+            "comments": 11,
+            "liked": false
+        },
+        {
+            "title": "Churrascaria do Contorno",
+            "image": "./assets/images/maps/place-5.jpg",
+            "description": "O melhor churrasco da região.",
+            "likes": 2,
+            "comments": 5,
+            "liked": true
+        }
+    ]
+}
